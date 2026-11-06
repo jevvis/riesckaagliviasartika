@@ -3,7 +3,7 @@
 Tanggal: 2026-11-06. Sumber: `CV RIESCKA AGLIVIA SARTIKA.pdf` (1 halaman) dan 8 gambar di `drive-download-20261106T085003Z-1-001`.
 
 ## Catatan dari atasan (WhatsApp)
-Klien tidak punya banyak foto kegiatan; kalau tidak ada foto, tidak perlu foto, boleh diganti ikon (misalnya ikon rumah sakit). Maka tempat kerja dan magang tampil sebagai panel ikon (apotek, klinik, rumah sakit), bukan foto.
+Klien tidak punya banyak foto kegiatan; kalau tidak ada foto, tidak perlu foto, boleh diganti ikon (misalnya ikon rumah sakit). Maka tempat kerja dan magang tampil sebagai kartu teks tanpa foto (keputusan lanjutan: tulisan saja tidak apa-apa).
 
 ## Keputusan desain (pilihan pembuat situs)
 - Kode dasar ORDER 22 (apoteker), tema hijau.
@@ -16,7 +16,7 @@ Klien tidak punya banyak foto kegiatan; kalau tidak ada foto, tidak perlu foto, 
 - Teks buatan pembuat situs (diturunkan dari CV): judul Tentang Saya, kutipan, empat karakter kerja, tagline. Terjemahan Inggris dibuat pembuat situs.
 
 ## Daftar perbedaan CV vs foto (untuk klien)
-1. Tidak ada foto untuk Apotek Medika Jaya, Klinik Ananda Setia Budi, Klinik Sudirjo Partodimedjo, RSUD Cibabat, dan Kimia Farma Apotek 335. Diganti panel ikon.
+1. Tidak ada foto untuk Apotek Medika Jaya, Klinik Ananda Setia Budi, Klinik Sudirjo Partodimedjo, RSUD Cibabat, dan Kimia Farma Apotek 335. Ditampilkan sebagai kartu teks saja (keputusan atasan: tanpa foto tidak apa-apa).
 2. Empat foto (`IMG_0548`, `IMG_0556`, `IMG_0557`, `IMG_0561`) adalah foto liburan (jip di gunung, malam di kota, rusa, gerbang kayu); tidak berhubungan dengan CV, tidak dipakai.
 3. `IMG_2209` (jas putih dengan selempang "PUJIAN", map ijazah) dipakai untuk Profesi Apoteker; `IMG_2208` (toga, spanduk "Wisuda XIX ... Bhakti Pertiwi 2017-2018") untuk S1. Penanda "2/5" Instagram di `IMG_2209` dihapus. Mohon konfirmasi bahwa foto Profesi memang dari UNJANI.
 4. `IMG_2210` (jas putih, kedua tangan bersilang) resolusi rendah (320 px, terpotong); tidak dipakai.

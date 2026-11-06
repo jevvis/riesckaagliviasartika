@@ -161,54 +161,6 @@ export function InternshipImageStack({
   )
 }
 
-type VisualKind = 'pharmacy' | 'clinic' | 'hospital'
-
-// Klien tidak mengirim foto tempat kerja/magang: ditampilkan sebagai panel ikon sesuai jenis fasilitas.
-function VisualIcon({ kind }: { kind: VisualKind }) {
-  const common = { fill: 'none', stroke: 'currentColor', strokeWidth: 2.2, strokeLinecap: 'round' as const, strokeLinejoin: 'round' as const }
-  return (
-    <svg viewBox="0 0 64 64" className="w-24 h-24 md:w-32 md:h-32" aria-hidden="true">
-      {kind === 'pharmacy' && (
-        <g {...common}>
-          <circle cx="32" cy="32" r="25" />
-          <path d="M32 19v26M19 32h26" />
-        </g>
-      )}
-      {kind === 'clinic' && (
-        <g {...common}>
-          <path d="M7 29 32 8l25 21v27H7z" />
-          <path d="M32 29v15M24.5 36.5h15" />
-        </g>
-      )}
-      {kind === 'hospital' && (
-        <g {...common}>
-          <rect x="13" y="8" width="38" height="48" rx="3" />
-          <path d="M32 17v14M25 24h14" />
-          <path d="M25 56V44h14v12" />
-          <path d="M20 37h4M40 37h4" />
-        </g>
-      )}
-    </svg>
-  )
-}
-
-function VisualPanel({ kind, label, place }: { kind: VisualKind; label: string; place: string }) {
-  return (
-    <div className="relative w-full aspect-video rounded-3xl overflow-hidden border border-[var(--card-border)] bg-[var(--card-bg)] shadow-2xl flex items-center justify-center">
-      <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/20 via-transparent to-teal-500/10 pointer-events-none" />
-      <div className="absolute -right-10 -bottom-10 w-56 h-56 rounded-full bg-emerald-500/10 pointer-events-none" />
-      <div className="absolute -left-8 -top-8 w-40 h-40 rounded-full bg-emerald-500/10 pointer-events-none" />
-      <div className="relative text-emerald-500 w-40 h-40 md:w-48 md:h-48 rounded-full bg-[var(--background)]/70 border border-emerald-500/30 flex items-center justify-center shadow-lg">
-        <VisualIcon kind={kind} />
-      </div>
-      <div className="absolute bottom-4 left-5 right-5 flex items-end justify-between gap-3">
-        <span className="text-[10px] tracking-[0.25em] uppercase font-semibold text-emerald-500">{label}</span>
-        {place && <span className="text-[11px] font-medium text-[var(--muted)] text-right">{place}</span>}
-      </div>
-    </div>
-  )
-}
-
 export default function WorkGallery({
   prefix = 'work',
   sectionId = 'work',
@@ -233,8 +185,6 @@ export default function WorkGallery({
       subtitle: t(`${prefix}.${n}.sub`),
       description: t(`${prefix}.${n}.desc`),
       tags: t(`${prefix}.${n}.tags`).split('|'),
-      kind: t(`${prefix}.${n}.visual`) as VisualKind,
-      align: (i % 2 === 0 ? 'right' : 'left') as 'left' | 'right',
     }
   })
 
@@ -268,35 +218,33 @@ export default function WorkGallery({
           )}
         </div>
 
-        <div className="flex flex-col gap-24 lg:gap-32">
+        <div className="flex flex-col gap-8 md:gap-10">
           {items.map((item) => (
-            <div key={item.number} className={`flex flex-col lg:flex-row gap-10 lg:gap-16 items-center ${item.align === 'left' ? 'lg:flex-row-reverse' : ''}`}>
-              <div className="w-full lg:w-1/2 flex flex-col font-sans">
-                <div className="flex items-center gap-3 mb-3">
-                  <span className="text-xs font-sans font-bold px-2.5 py-1 rounded-md bg-emerald-500/10 text-emerald-500 border border-emerald-500/20">{item.number}</span>
-                  <span className="text-[11px] tracking-widest text-[var(--muted)] uppercase font-sans font-semibold">{item.period}</span>
+            <div
+              key={item.number}
+              className="bg-[var(--card-bg)] border border-[var(--card-border)] hover:border-[var(--muted)] rounded-3xl p-6 sm:p-8 md:p-10 transition-all duration-300 shadow-sm hover:shadow-xl font-sans"
+            >
+              <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-6">
+                <div>
+                  <div className="flex items-center gap-3 mb-3">
+                    <span className="text-xs font-sans font-bold px-2.5 py-1 rounded-md bg-emerald-500/10 text-emerald-500 border border-emerald-500/20">{item.number}</span>
+                    <span className="text-[11px] tracking-widest text-[var(--muted)] uppercase font-sans font-semibold">{item.subtitle}</span>
+                  </div>
+                  <h3 className="text-2xl md:text-3xl font-bold text-[var(--foreground)] mb-1 font-sans">{item.institution}</h3>
+                  <h4 className="text-lg md:text-xl font-semibold text-emerald-500 font-sans">{item.role}</h4>
                 </div>
-                <h3 className="text-2xl md:text-3xl font-bold text-[var(--foreground)] mb-1 font-sans">{item.institution}</h3>
-                <h4 className="text-lg md:text-xl font-semibold text-emerald-500 mb-2 font-sans">{item.role}</h4>
-                <p className="text-xs md:text-sm font-semibold text-[var(--muted)] mb-5 font-sans">
-                  {item.subtitle}
-                  {item.location && (
-                    <>
-                      {' '}• <span className="opacity-75">{item.location}</span>
-                    </>
-                  )}
-                </p>
-                <p className="text-[var(--muted)] text-sm leading-relaxed mb-6 text-justify font-sans">{item.description}</p>
-                <div className="flex flex-wrap gap-2">
-                  {item.tags.map((tag) => (
-                    <span key={tag} className="text-[10px] font-medium px-3 py-1.5 rounded-lg bg-[var(--card-bg)] border border-[var(--card-border)] text-[var(--foreground)] opacity-90 font-sans">
-                      {tag}
-                    </span>
-                  ))}
+                <div className="sm:text-right shrink-0">
+                  <span className="inline-block text-[11px] tracking-widest uppercase font-semibold px-3.5 py-1.5 rounded-full bg-[var(--background)] border border-[var(--card-border)] text-[var(--foreground)]">{item.period}</span>
+                  {item.location && <p className="text-xs font-semibold text-[var(--muted)] mt-2">{item.location}</p>}
                 </div>
               </div>
-              <div className="w-full lg:w-1/2">
-                <VisualPanel kind={item.kind} label={item.subtitle} place={item.location} />
+              <p className="text-[var(--muted)] text-sm md:text-base leading-relaxed mb-6 text-justify font-sans">{item.description}</p>
+              <div className="flex flex-wrap gap-2 pt-5 border-t border-[var(--card-border)]/60">
+                {item.tags.map((tag) => (
+                  <span key={tag} className="text-[10px] font-medium px-3 py-1.5 rounded-lg bg-[var(--background)] border border-[var(--card-border)] text-[var(--foreground)] opacity-90 font-sans">
+                    {tag}
+                  </span>
+                ))}
               </div>
             </div>
           ))}
