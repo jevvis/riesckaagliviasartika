@@ -7,7 +7,7 @@ Klien tidak punya banyak foto kegiatan; kalau tidak ada foto, tidak perlu foto, 
 
 ## Keputusan desain (pilihan pembuat situs)
 - Kode dasar ORDER 22 (apoteker), tema hijau.
-- Hero dan foto profil: `Profil.jpg` (2058 px, latar merah dipotong dengan rembg). Foto Profesi: `Profesi.jpg`; foto S1: `Wisuda.jpg` (klien mengirim ulang versi beresolusi tinggi).
+- Hero dan foto profil: `profil2.png` (sudah berlatar transparan, hanya dipangkas). Foto Profesi: `Profesi.jpg`; foto S1: `Wisuda.jpg` (klien mengirim ulang versi beresolusi tinggi).
 - Bagian: Tentang, Pendidikan (2), Pengalaman Kerja (3), Magang/PKPA (2), Lisensi (STR dan Sertifikat Kompetensi), Keahlian, Karakter Kerja, Kontak.
 - Tidak ada bagian organisasi, proyek, publikasi, atau software karena CV tidak memuatnya.
 - Kemampuan personal tampil sebagai 10 chip tanpa deskripsi (CV hanya memuat kata sifat).
