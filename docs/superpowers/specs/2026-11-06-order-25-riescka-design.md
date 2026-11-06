@@ -7,7 +7,7 @@ Klien tidak punya banyak foto kegiatan; kalau tidak ada foto, tidak perlu foto, 
 
 ## Keputusan desain (pilihan pembuat situs)
 - Kode dasar ORDER 22 (apoteker), tema hijau.
-- Hero dan foto profil: `PAS FOTO HIJAB.png` (latar merah dipotong, cutout rembg, diperbesar 2x karena sumber hanya 827 px).
+- Hero dan foto profil: `Profil.jpg` (2058 px, latar merah dipotong dengan rembg). Foto Profesi: `Profesi.jpg`; foto S1: `Wisuda.jpg` (klien mengirim ulang versi beresolusi tinggi).
 - Bagian: Tentang, Pendidikan (2), Pengalaman Kerja (3), Magang/PKPA (2), Lisensi (STR dan Sertifikat Kompetensi), Keahlian, Karakter Kerja, Kontak.
 - Tidak ada bagian organisasi, proyek, publikasi, atau software karena CV tidak memuatnya.
 - Kemampuan personal tampil sebagai 10 chip tanpa deskripsi (CV hanya memuat kata sifat).
@@ -18,9 +18,9 @@ Klien tidak punya banyak foto kegiatan; kalau tidak ada foto, tidak perlu foto, 
 ## Daftar perbedaan CV vs foto (untuk klien)
 1. Tidak ada foto untuk Apotek Medika Jaya, Klinik Ananda Setia Budi, Klinik Sudirjo Partodimedjo, RSUD Cibabat, dan Kimia Farma Apotek 335. Ditampilkan sebagai kartu teks saja (keputusan atasan: tanpa foto tidak apa-apa).
 2. Empat foto (`IMG_0548`, `IMG_0556`, `IMG_0557`, `IMG_0561`) adalah foto liburan (jip di gunung, malam di kota, rusa, gerbang kayu); tidak berhubungan dengan CV, tidak dipakai.
-3. `IMG_2209` (jas putih dengan selempang "PUJIAN", map ijazah) dipakai untuk Profesi Apoteker; `IMG_2208` (toga, spanduk "Wisuda XIX ... Bhakti Pertiwi 2017-2018") untuk S1. Penanda "2/5" Instagram di `IMG_2209` dihapus. Mohon konfirmasi bahwa foto Profesi memang dari UNJANI.
+3. `Profesi.jpg` (jas putih, selempang "PUJIAN", map ijazah) dipakai untuk Profesi Apoteker; `Wisuda.jpg` (toga, spanduk "Wisuda XIX ... Bhakti Pertiwi 2017-2018") untuk S1. Mohon konfirmasi bahwa foto Profesi memang dari UNJANI.
 4. `IMG_2210` (jas putih, kedua tangan bersilang) resolusi rendah (320 px, terpotong); tidak dipakai.
-5. Resolusi pas foto kecil (827 px); hero akan lebih tajam bila klien mengirim file asli.
+5. `Profil.jpg` papan namanya terbaca "apt. Riescka Aglivia Sartika, S.Farm." sehingga gelar di situs sesuai.
 6. CV menulis "Universitas Jendral Achmad Yani"; situs memakai ejaan resmi "Jenderal". CV menulis "Partodimedjo" pada nama klinik; dipakai apa adanya.
 7. Periode kerja di CV tumpang tindih: Apotek Medika Jaya 2021-2025, Klinik Ananda 2022-2023, Klinik Sudirjo 2020-2022. Ditampilkan apa adanya.
 8. STR dan Sertifikat Kompetensi tidak mencantumkan tahun dan tidak ada berkasnya; tampil sebagai kartu teks tanpa tahun. Mohon kirim berkasnya bila ingin ditampilkan.
