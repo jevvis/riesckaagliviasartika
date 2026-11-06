@@ -43,21 +43,25 @@ export default function TypewriterTitle({
     if (!hasStarted) return
 
     let currentIndex = 0
+    let interval: ReturnType<typeof setInterval> | undefined
+    setIsDone(false)
     const startTimeout = setTimeout(() => {
-      const interval = setInterval(() => {
+      interval = setInterval(() => {
         currentIndex++
         if (currentIndex <= text.length) {
           setDisplayedText(text.slice(0, currentIndex))
         } else {
           setIsDone(true)
-          clearInterval(interval)
+          if (interval) clearInterval(interval)
         }
       }, speed)
-
-      return () => clearInterval(interval)
     }, delay)
 
-    return () => clearTimeout(startTimeout)
+    // bersihkan timeout DAN interval (sebelumnya interval tidak ikut dibersihkan saat teks/bahasa berganti)
+    return () => {
+      clearTimeout(startTimeout)
+      if (interval) clearInterval(interval)
+    }
   }, [hasStarted, text, speed, delay])
 
   return (
