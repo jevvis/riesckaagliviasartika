@@ -16,8 +16,8 @@ const oswald = Oswald({
 
 export const metadata: Metadata = {
   title: 'apt. Riescka Aglivia Sartika, S.Farm. | Portofolio Apoteker',
-  description: 'Apoteker Penanggung Jawab Apotek & Klinik | Pelayanan Kefarmasian — Musi Rawas, Sumatera Selatan',
-  keywords: ['Riescka Aglivia Sartika', 'Apoteker', 'Apoteker Penanggung Jawab', 'APA', 'Pelayanan Kefarmasian', 'Musi Rawas', 'Sumatera Selatan'],
+  description: 'Apoteker Penanggung Jawab Apotek & Klinik | Pelayanan Kefarmasian — Jakarta Timur, DKI Jakarta',
+  keywords: ['Riescka Aglivia Sartika', 'Apoteker', 'Apoteker Penanggung Jawab', 'APA', 'Pelayanan Kefarmasian', 'Jakarta Timur', 'DKI Jakarta'],
   openGraph: {
     title: 'apt. Riescka Aglivia Sartika, S.Farm. | Portofolio Apoteker',
     description: 'Apoteker Penanggung Jawab Apotek & Klinik | Pelayanan Kefarmasian',

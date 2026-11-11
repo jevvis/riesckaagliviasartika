@@ -79,7 +79,7 @@ for (const f of files) {
 
 // 5. Data wajib klien
 const all = files.map((f) => readFileSync(f, 'utf8')).join('\n')
-for (const must of ['Riescka Aglivia Sartika', 'riesckaaglivia1@gmail.com', '6282178373320', '+62 821-7837-3320', 'Musi Rawas', 'Jenderal Achmad Yani', 'Bhakti Pertiwi', '3.99', '3.47', 'Medika Jaya', 'Ananda Setia Budi', 'Sudirjo Partodimedjo', 'Cibabat', 'Kimia Farma Apotek 335', 'Konsil Kesehatan Indonesia', 'Kolegium Farmasi Indonesia', 'MESO', 'PIO']) {
+for (const must of ['Riescka Aglivia Sartika', 'riesckaaglivia1@gmail.com', '6282178373320', '+62 821-7837-3320', 'Jakarta Timur', 'Jenderal Achmad Yani', 'Bhakti Pertiwi', '3.89', '3.37', 'Medika Jaya', 'Ananda Setia Budi', 'Sudirjo Partodimedjo', 'Cibabat', 'Kimia Farma Apotek 335', 'Konsil Kesehatan Indonesia', 'Kolegium Farmasi Indonesia', 'MESO', 'PIO']) {
   if (!all.toLowerCase().includes(must.toLowerCase())) fail(`Data wajib tidak ditemukan: ${must}`)
 }
 

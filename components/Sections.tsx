@@ -743,11 +743,11 @@ export function AboutSection() {
                 <div className="flex flex-wrap gap-x-8 gap-y-4">
                   <div>
                     <p className="text-[10px] tracking-widest text-[var(--muted)] uppercase mb-1 font-semibold">{t('about.ipk')}</p>
-                    <p className="text-sm font-bold">3.99/4.00</p>
+                    <p className="text-sm font-bold">3.89/4.00</p>
                   </div>
                   <div>
                     <p className="text-[10px] tracking-widest text-[var(--muted)] uppercase mb-1 font-semibold">{t('about.toefl')}</p>
-                    <p className="text-sm font-bold">3.47/4.00</p>
+                    <p className="text-sm font-bold">3.37/4.00</p>
                   </div>
                   <div>
                     <p className="text-[10px] tracking-widest text-[var(--muted)] uppercase mb-1 font-semibold">{t('about.year')}</p>
@@ -873,7 +873,7 @@ export function AboutSection() {
           <div className="group p-5 sm:p-6 rounded-3xl bg-[var(--card-bg)]/40 hover:bg-[var(--card-bg)] border border-[var(--card-border)]/50 hover:border-emerald-500/40 hover:-translate-y-2 hover:shadow-xl transition-all duration-300 flex flex-col justify-between cursor-pointer">
             <div>
               <div className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-[var(--foreground)] mb-2 font-sans group-hover:text-emerald-500 transition-colors duration-300">
-                <AnimatedCounter end={3.99} decimals={2} suffix="" duration={1600} />
+                <AnimatedCounter end={3.89} decimals={2} suffix="" duration={1600} />
               </div>
               <span className="text-xs sm:text-sm font-bold tracking-wider uppercase text-[var(--muted)] group-hover:text-[var(--foreground)] transition-colors block">
                 {t('metric.ipk')}
@@ -888,7 +888,7 @@ export function AboutSection() {
           <div className="group p-5 sm:p-6 rounded-3xl bg-[var(--card-bg)]/40 hover:bg-[var(--card-bg)] border border-[var(--card-border)]/50 hover:border-emerald-500/40 hover:-translate-y-2 hover:shadow-xl transition-all duration-300 flex flex-col justify-between cursor-pointer">
             <div>
               <div className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-[var(--foreground)] mb-2 font-sans group-hover:text-emerald-500 transition-colors duration-300">
-                <AnimatedCounter end={3.47} decimals={2} suffix="" duration={1400} />
+                <AnimatedCounter end={3.37} decimals={2} suffix="" duration={1400} />
               </div>
               <span className="text-xs sm:text-sm font-bold tracking-wider uppercase text-[var(--muted)] group-hover:text-[var(--foreground)] transition-colors block">
                 {t('metric.medal')}

@@ -35,7 +35,7 @@ export default function Contact() {
     {
       id: '03',
       label: t('contact.location'),
-      value: 'Kab. Musi Rawas, Sumatera Selatan',
+      value: 'Jakarta Timur, DKI Jakarta',
       href: '#',
       isLink: false,
       icon: (
